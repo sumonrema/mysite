@@ -1,0 +1,332 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;	
+
+     
+} 
+.header {
+    background-image: linear-gradient(rgb(55 44 118 / 84%),rgb(17 20 72 / 71%)),
+      url(pic/01.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+    border-bottom-right-radius: 130px;
+}
+nav {
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 18px 9%;
+	transition:background 1s;
+}
+nav .my_logo{
+    display: flex;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    align-items: center;
+  
+}
+nav .my_logo img {
+    width: 68px;
+    margin-right: 14px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{text-decoration: none;
+color: white;
+font-weight: 700;
+}
+nav:hover{
+	background:white;
+}
+nav:hover .my_logo{
+	color:#c83b68;
+}
+nav:hover ul li a{
+	color:#c83b68;
+}
+.feature_content {
+    margin-top: 10%;
+    margin-left: 10%;
+    color: white;
+}
+.feature_content h1{font-size: 122px;font-weight: 600;line-height: 140px;}
+.feature_content p {
+    max-width: 500px;
+    line-height: 26px;
+	opacity:0;
+}
+.btn_links {
+	opacity:0;
+    margin-top: 33px;
+}
+.btn_links a{color: white;text-decoration: none;display: inline-block;}
+a.button01 {
+    padding: 10px 37px;
+    margin-right: 30px;
+    border: 2px solid white;
+    border-radius: 16px;
+}
+.slide_left {
+	animation: example 1s linear forwards;
+}
+
+@keyframes example{
+	
+	0% {
+		transform: translate(100px);
+		opacity:0;
+	}
+	100% {
+		transform: translate(0px);
+		opacity:1;
+	}
+}
+p.slide_left{
+	animation-delay: 1s;
+}
+.btn_links.slide_left{
+	animation-delay: 2s;
+}
+
+section#main_ite {
+    width: 100%;
+    padding: 100px 0pc;
+    background: #0c416d00;
+}
+section#main_ite img.about_picture {
+    height: auto;
+    width: 430px;
+}
+section#main_ite .about_text {
+    width: 551px;
+}
+section#main_ite .main_about {
+    width: 1170px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about_text h2 {
+    color: #181e50;
+    font-size: 59px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about_text h3 {
+    color: #7c7f9c;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+.about_text p {
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+    line-height: 29px;
+    color: #181e50;
+    font-size: 18px;
+}
+.about_text button.abt_btn {
+    background-color: #181e50;
+    color: white;
+    text-decoration: none;
+    padding: 14px 58px;
+    border-radius: 82px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: .4s;
+	font-size:20px;
+}
+.about_text button.abt_btn:hover{
+	 background-color:transparent;
+	 border:2px solid  #181e50;
+	 cursor:pointer;
+	 color:#181e50;
+	
+}
+
+/* team login registation css*/
+
+
+section.loginsection {
+    height: 100vh;
+    background: #f5e9e9;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Russo One', sans-serif;
+}
+.log_container {
+    width: 350px;
+    padding: 30px;
+    background: #e5d6d6;
+    border-radius: 20px;
+    box-shadow: 14px 14px 20px #ffffffc4, -14px -14px 20px #b5a8a869;
+}
+.icon_login {
+    color: purple;
+    font-size: 55px;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+    border-radius: 50px;
+    box-shadow: 7px 7px 10px #c5c1c185, -7px -7px 10px #d3c6c6;
+    text-align: center;
+}
+
+h3.login_title {
+    color: purple;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 22px;
+    font-family: 'Russo One', sans-serif;
+}
+input.loging_cont {
+    color: black;
+    background: white;
+    outline: none;
+    border: none;
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    height: 55px;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 0 0 25px;
+    letter-spacing: 1px;
+    box-shadow: inset 6px 6px 6px #dbc2c2, -6px -6px 6px #e5d6d6;
+}
+::placeholder {
+    font-size: 16px;
+    color: #706767;
+    font-weight: 700;
+}
+button.login_btn {
+    color: purple;
+    background: #e5d6d6;
+    width: 100%;
+    margin: 25px 0 21px;
+    padding: 12px 11px 15px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 6px 6px 6px #b7b7b7, -6px -6px 6px #ffffff42;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1px;
+	transition:all .s;
+}
+button.login_btn:hover{
+	color:yellow;
+}
+
+
+
+
+/*csss footer start*/
+
+footer {
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(#1d2457, #06083a);
+    padding: 100px 0 32px;
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+    border-top-left-radius: 130px;
+}
+footer .row {
+    width: 85%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-transform: capitalize;
+}
+footer .row .col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+footer .row .col img.fotlogo {
+    width: 82px;
+    margin-bottom: 33px;
+}
+footer .row .col h2 {
+    width: fit-content;
+    margin-bottom: 82px;
+    position: relative;
+}
+footer .row .col p.email-addr {
+    width: fit-content;
+    margin: 20px 0px;
+    border-bottom: 1px solid white;
+}
+footer .row span.ft_span {
+    margin-left: 25px;
+    font-size: 26px;
+    position: absolute;
+}
+footer .row .col li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+footer .row .col li a {
+    color: white;
+    text-decoration: none;
+}
+footer .row .col form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-bottom: 55px;
+    padding-bottom: 13px;
+}
+footer .row .col i.fa-solid.fa-envelope {
+    font-size: 22px;
+    margin-right: 11px;
+}
+footer .row .col input[type="email"] {
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: white;
+    width: 100%;
+}
+footer .row .col button {
+    background: transparent;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+footer .row .col button i.fa-solid.fa-arrow-right {
+    width: 19px;
+    color: white;
+}
+img.p_pic {
+    width: 413px;
+    height: 413px;
+    border-radius: 100%;
+}
